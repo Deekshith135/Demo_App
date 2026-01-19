@@ -1,0 +1,121 @@
+# ============================================================================
+# .gitattributes - Normalize line endings across platforms
+# ============================================================================
+# This ensures all team members (Windows, macOS, Linux) work with consistent
+# line endings, preventing merge conflicts and warnings.
+
+# Auto-normalize line endings to LF on commit, CRLF on checkout (Windows)
+* text=auto
+
+# ============================================================================
+# PYTHON
+# ============================================================================
+*.py text eol=lf
+*.pyw text eol=lf
+*.pyx text eol=lf
+*.pyi text eol=lf
+*.pyc binary
+
+# ============================================================================
+# DART / FLUTTER
+# ============================================================================
+*.dart text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.json text eol=lf
+*.pubspec text eol=lf
+
+# ============================================================================
+# SHELL SCRIPTS
+# ============================================================================
+*.sh text eol=lf
+*.bash text eol=lf
+gradlew text eol=lf
+
+# ============================================================================
+# GRADLE
+# ============================================================================
+*.gradle text eol=lf
+gradle.properties text eol=lf
+settings.gradle text eol=lf
+
+# ============================================================================
+# WEB
+# ============================================================================
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.jsx text eol=lf
+
+# ============================================================================
+# DOCUMENTATION
+# ============================================================================
+*.md text eol=lf
+README text eol=lf
+AUTHORS text eol=lf
+CHANGELOG text eol=lf
+LICENSE text eol=lf
+
+# ============================================================================
+# CONFIG FILES
+# ============================================================================
+*.conf text eol=lf
+*.config text eol=lf
+*.ini text eol=lf
+*.toml text eol=lf
+.env* text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+
+# ============================================================================
+# XCODE / iOS
+# ============================================================================
+*.pbxproj merge=union
+*.xcconfig text eol=lf
+*.h text eol=lf
+*.m text eol=lf
+*.swift text eol=lf
+
+# ============================================================================
+# CMAKE / C++
+# ============================================================================
+CMakeLists.txt text eol=lf
+*.cmake text eol=lf
+*.cc text eol=lf
+*.cpp text eol=lf
+*.h text eol=lf
+*.hpp text eol=lf
+
+# ============================================================================
+# BINARY FILES (do not convert)
+# ============================================================================
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.mov binary
+*.mp4 binary
+*.mp3 binary
+*.gz binary
+*.zip binary
+*.7z binary
+*.ttf binary
+*.otf binary
+*.db binary
+*.sqlite binary
+*.h5 binary
+*.pt binary
+*.pth binary
+*.pkl binary
+*.onnx binary
+*.weights binary
+*.apk binary
+*.ipa binary
+*.exe binary
+
+# ============================================================================
+# END OF .gitattributes
+# ============================================================================
