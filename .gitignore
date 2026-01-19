@@ -1,0 +1,327 @@
+# ============================================================================
+# UNIFIED .gitignore for Full-Stack Project (Python Backend + Flutter App)
+# ============================================================================
+
+# ============================================================================
+# PYTHON BACKEND
+# ============================================================================
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.env
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Pyenv
+.python-version
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Backend-specific
+*.log
+logs/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# ============================================================================
+# FLUTTER / DART APP
+# ============================================================================
+
+# Exceptions to above rules.
+!/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
+
+# Flutter build directory
+build/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+
+# Flutter specific files
+pubspec.lock
+.metadata
+
+# iOS
+ios/Flutter/Flutter.podspec
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.modulemap
+ios/Flutter/GeneratedPluginRegistrant.*
+
+# Android
+android/app/debug/
+android/app/profile/
+android/app/release/
+
+# Platform artifacts
+app.*.symbols
+app.*.map.json
+app.*.release.json
+
+# iOS/macOS
+**/ios/**/*.mode1v3
+**/ios/**/*.mode2v3
+**/ios/**/*.moved-aside
+**/ios/**/*.pbxuser
+**/ios/**/*.perspectivev3
+**/ios/**/*sync/
+**/ios/**/.sconsign.dblite
+**/ios/**/.tags*
+**/ios/**/.vagrant/
+**/ios/**/DerivedData/
+**/ios/**/Icon?
+**/ios/**/Icon??
+**/ios/**/Icon??
+**/ios/**/Icon???
+**/ios/**/Icon????
+**/ios/**/Icon?????
+**/ios/**/Icon??????
+**/ios/**/Icon???????
+**/ios/**/Icon????????
+**/ios/**/Icon?????????
+**/ios/**/xcuser*
+**/ios/**/.DS_Store
+**/ios/**/.AppleDouble
+**/ios/**/.LSOverride
+**/ios/**/*.junk
+**/ios/**/*.swp
+**/ios/**/*.swo
+**/ios/**/*~.nib
+**/ios/**/*.lint
+**/ios/**/*.sinf
+**/ios/**/*.ipa
+**/ios/**/.htaccess
+**/ios/**/.htpasswd
+
+# Android
+**/android/local.properties
+**/android/**/GeneratedPluginRegistrant.java
+**/android/key.properties
+*.jks
+*.keystore
+
+# Web
+lib/generated_plugin_registrant.dart
+
+# ============================================================================
+# IDE & EDITOR
+# ============================================================================
+
+# VS Code
+.vscode/
+*.code-workspace
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+.vscode/extensions.json
+
+# Android Studio
+.idea/
+.gradle/
+*.iml
+*.ipr
+*.iws
+local.properties
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# PyCharm
+.idea/
+*.iml
+out/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+*.swp
+*.swo
+*~.nib
+
+# ============================================================================
+# ENVIRONMENT & SECRETS
+# ============================================================================
+
+# Environment files (local only)
+.env
+.env.local
+.env.*.local
+
+# Secrets
+secrets.env
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+*.jks
+
+# ============================================================================
+# BUILD & GENERATED FILES
+# ============================================================================
+
+# Flutter
+.dart_tool/
+build/
+
+# Python
+dist/
+build/
+*.egg-info/
+
+# Generated files
+lib/generated_plugin_registrant.dart
+android/app/debug/app-debug.apk
+android/app/profile/app-profile.apk
+android/app/release/app-release.apk
+
+# ============================================================================
+# DATA & UPLOADS
+# ============================================================================
+
+# User uploads (keep example but ignore actual uploads)
+uploads/
+!uploads/.gitkeep
+
+# Survey data
+Deekshith/storage/surveys/
+Backend-backend-branch/Deekshith/storage/surveys/
+
+# Generated results
+results/
+sideview/results/
+Backend-backend-branch/sideview/results/
+
+# Model artifacts and checkpoints
+*.h5
+*.pt
+*.pth
+*.pkl
+*.joblib
+*.onnx
+*.model
+*.weights
+
+# ============================================================================
+# MISCELLANEOUS
+# ============================================================================
+
+# OS files
+Thumbs.db
+.DS_Store
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# System
+.DS_Store
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.~*
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# ============================================================================
+# CI/CD (keep if using GitHub Actions or similar)
+# ============================================================================
+# Uncomment if you don't want to commit workflow runs
+# .github/workflows/*/runs/
+
+# ============================================================================
+# PROJECT SPECIFIC
+# ============================================================================
+
+# Deekshith module
+Deekshith.txt
+Deekshith/
+
+# Verification files (generated)
+DRONE_APP_VERIFICATION_COMPLETE.txt
+
+# Cache
+*.cache
+
+# Runtime artifacts
+*.pyc
+*.pyo
+*.egg-info
+
+# ============================================================================
+# END OF .gitignore
+# ============================================================================
